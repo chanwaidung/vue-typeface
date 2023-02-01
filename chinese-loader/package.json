@@ -1,0 +1,16 @@
+{
+  "name": "@vue-typeface/chinese-loader",
+  "version": "1.0.0",
+  "description": "Get Chinese form program",
+  "private": false,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "chan waidung",
+  "license": "ISC",
+  "engines": {
+    "pnpm": "",
+    "node": ""
+  }
+}

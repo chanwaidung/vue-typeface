@@ -1,0 +1,23 @@
+{
+  "name": "vue-typeface",
+  "version": "1.0.0",
+  "private": false,
+  "description": "好用的字体提取工具",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chanwaidung/tiny-font.git"
+  },
+  "keywords": [
+    "font", "ttf", "woff", "otf",
+    "字体压缩", "字体提取", "优化"
+  ],
+  "author": "chan waidung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chanwaidung/tiny-font/issues"
+  },
+  "homepage": "https://github.com/chanwaidung/tiny-font#readme"
+}
