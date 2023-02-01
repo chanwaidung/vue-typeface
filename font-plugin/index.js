@@ -5,9 +5,9 @@ const pluginName = 'FontPlugin'
 
 function getMiniFont(options) {
     const defaultOps = {
-        originFontPath: '',
-        symbol: {data: []},
-        outputFontPath: ''
+        originFontPath: path.resolve('./output'),
+        symbol: path.resolve('./output/symbol.json'),
+        outputFontPath: path.resolve('./output')
     }
 
     const ops = {...defaultOps, ...options}
@@ -39,7 +39,6 @@ class FontPlugin {
     apply(compiler) {
         const { options } = this
         compiler.hooks.done.tap(pluginName, function (callback) {
-            console.log('this.options: ', options)
             getMiniFont(options)
         })
     }
