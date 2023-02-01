@@ -11,7 +11,7 @@
 npm i vue-typeface -D
 ```
 
-# 2️⃣ 配置chinese-loader
+# 2️⃣ 配置vue-typeface/chinese-loader
 
 打开文件```vue.config.js```，将以下代码添加至loader中。
 
@@ -23,14 +23,14 @@ module.exports = {
         config.module
             .rule('vue')
             .test(/\.vue$/)
-            .use('@vue-typeface/chinese-loader')
-            .loader('@vue-typeface/chinese-loader')
+            .use('vue-typeface/chinese-loader')
+            .loader('vue-typeface/chinese-loader')
             .end()
     }
 }
 ```
 
-# 3️⃣ chinese-loader的可选入参
+# 3️⃣ vue-typeface/chinese-loader的可选入参
 
 这个loader允许你传入一个Object型参数，用来控制一些基础功能：
 
@@ -40,7 +40,7 @@ module.exports = {
         config.module
             .rule('vue')
             .test(/\.vue$/)
-            .use('@vue-typeface/chinese-loader')
+            .use('vue-typeface/chinese-loader')
             .tap((option)=> {
                 return {
                     output: path.resolve('./output'),
@@ -48,7 +48,7 @@ module.exports = {
                     express: /[\u4E00-\u9FA5\uF900-\uFA2D]/g,
                 }
             })
-            .loader('@vue-typeface/chinese-loader')
+            .loader('vue-typeface/chinese-loader')
             .end()
     }
 }
@@ -66,7 +66,7 @@ module.exports = {
 
 自定义正则表达式，以筛选文字
 
-# 4️⃣ 配置font-plugin
+# 4️⃣ 配置vue-typeface/font-plugin
 
 打开文件```vue.config.js```，将以下代码添加至plugins配置中。
 
@@ -74,7 +74,7 @@ module.exports = {
 ```output/```文件夹下。
 
 ```javascript
-const FontPlugin = require('@vue-typeface/font-plugin')
+const FontPlugin = require('vue-typeface/font-plugin')
 module.exports = {
     configureWebpack: {
         plugins: [
@@ -84,12 +84,12 @@ module.exports = {
 }
 ```
 
-# 5️⃣ font-plugin的可选入参
+# 5️⃣ vue-typeface/font-plugin的可选入参
 
 这个plugin允许你传入一个Object型参数，以实现一些基础功能：
 
 ```javascript
-const FontPlugin = require('@vue-typeface/font-plugin')
+const FontPlugin = require('vue-typeface/font-plugin')
 module.exports = {
     configureWebpack: {
         plugins: [

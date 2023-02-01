@@ -18,8 +18,8 @@ module.exports = {
         config.module
             .rule('vue')
             .test(/\.vue$/)
-            .use('@vue-typeface/chinese-loader')
-            .loader('@vue-typeface/chinese-loader')
+            .use('vue-typeface/chinese-loader')
+            .loader('vue-typeface/chinese-loader')
             .end()
     }
 }
@@ -32,7 +32,7 @@ module.exports = {
         config.module
             .rule('vue')
             .test(/\.vue$/)
-            .use('@vue-typeface/chinese-loader')
+            .use('vue-typeface/chinese-loader')
             .tap((option)=> {
                 return {
                     output: path.resolve('./output'),
@@ -40,7 +40,7 @@ module.exports = {
                     express: /[\u4E00-\u9FA5\uF900-\uFA2D]/g,
                 }
             })
-            .loader('@vue-typeface/chinese-loader')
+            .loader('vue-typeface/chinese-loader')
             .end()
     }
 }
@@ -52,7 +52,7 @@ Setting the name of output file.
 ### express
 Setting the rule to extract text. It is a RegExp
 
-# 4️⃣ Config @vue-typeface/font-plugin
+# 4️⃣ Config vue-typeface/font-plugin
 
 Open this file ```vue.config.js```, and add this code to plugins option.
 
@@ -60,7 +60,7 @@ In default, this tool will use this path ```output/symbol.json``` to set default
 symbol. The target file will generate to the folder ```output/```
 
 ```javascript
-const FontPlugin = require('@vue-typeface/font-plugin')
+const FontPlugin = require('vue-typeface/font-plugin')
 module.exports = {
     configureWebpack: {
         plugins: [
@@ -70,12 +70,12 @@ module.exports = {
 }
 ```
 
-# 5️⃣ @vue-typeface/font-plugin Option
+# 5️⃣ vue-typeface/font-plugin Option
 
 You can set an object param to this plugin
 
 ```javascript
-const FontPlugin = require('@vue-typeface/font-plugin')
+const FontPlugin = require('vue-typeface/font-plugin')
 module.exports = {
     configureWebpack: {
         plugins: [
