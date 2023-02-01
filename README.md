@@ -5,13 +5,13 @@
 
 这个工具会帮助在开发的时候将用到的字体抽离出来，达到减少字体体积的效果。
 
-# 1️⃣ 安装
+# 😃  安装
 
 ```shell
 npm i vue-typeface -D
 ```
 
-# 2️⃣ 配置vue-typeface/chinese-loader
+# 🙈  配置vue-typeface/chinese-loader
 
 打开文件```vue.config.js```，将以下代码添加至loader中。
 
@@ -30,7 +30,7 @@ module.exports = {
 }
 ```
 
-# 3️⃣ vue-typeface/chinese-loader的可选入参
+# 🍔  vue-typeface/chinese-loader的可选入参
 
 这个loader允许你传入一个Object型参数，用来控制一些基础功能：
 
@@ -66,7 +66,7 @@ module.exports = {
 
 自定义正则表达式，以筛选文字
 
-# 4️⃣ 配置vue-typeface/font-plugin
+# ⚽  配置vue-typeface/font-plugin
 
 打开文件```vue.config.js```，将以下代码添加至plugins配置中。
 
@@ -84,7 +84,7 @@ module.exports = {
 }
 ```
 
-# 5️⃣ vue-typeface/font-plugin的可选入参
+# 🚀  vue-typeface/font-plugin的可选入参
 
 这个plugin允许你传入一个Object型参数，以实现一些基础功能：
 
