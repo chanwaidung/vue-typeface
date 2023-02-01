@@ -1,6 +1,6 @@
 {
   "name": "@vue-typeface/font-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Compress the size of font",
   "private": false,
   "main": "index.js",
