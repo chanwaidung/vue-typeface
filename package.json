@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/chanwaidung/tiny-font/issues"
   },
-  "homepage": "https://github.com/chanwaidung/tiny-font#readme"
+  "homepage": "https://github.com/chanwaidung/tiny-font#readme",
+  "devDependencies": {
+    "fontmin": "^0.9.9"
+  }
 }
