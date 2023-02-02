@@ -1,6 +1,6 @@
 {
   "name": "vue-typeface",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": false,
   "description": "好用的艺术字体压缩、提取工具",
   "scripts": {
@@ -20,7 +20,7 @@
     "url": "https://github.com/chanwaidung/tiny-font/issues"
   },
   "homepage": "https://github.com/chanwaidung/tiny-font#readme",
-  "devDependencies": {
+  "dependencies": {
     "fontmin": "^0.9.9"
   }
 }
